@@ -48,19 +48,36 @@ changeUrls();
         Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
      */
 
-const addToTheSecond = function () {};
+const addToTheSecond = function () {
+  const listElements = document.getElementById('secondList');
+  const newElement = document.createElement('li');
+  newElement.innerText = '4th';
+  listElements.appendChild(newElement);
+};
+
+addToTheSecond();
 
 /* ESERCIZIO 6
         Scrivi una funzione che aggiunga un paragrafo al primo div
      */
 
-const addParagraph = function () {};
+const addParagraph = function () {
+  const secondParagraph = document.getElementById('first');
+  const addP = document.createElement('p');
+  addP.innerText = 'Paragrafo aggiunto';
+  secondParagraph.appendChild(addP);
+};
+addParagraph();
 
 /* ESERCIZIO 7
         Scrivi una funzione che faccia scomparire la prima lista non ordinata
      */
 
-const hideFirstUl = function () {};
+const hideFirstUl = function () {
+  const deleteList = document.getElementById('firstList');
+  deleteList.style.display = 'none';
+};
+hideFirstUl();
 
 /* ESERCIZIO 8 
         Scrivi una funzione che renda verde il background di ogni lista non ordinata
